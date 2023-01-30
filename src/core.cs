@@ -71,7 +71,7 @@ namespace depositstretcher
         {
             FieldInfo hereThicknessField = __instance.GetType().GetField("hereThickness", BindingFlags.Instance | BindingFlags.NonPublic);
             if ((int)hereThicknessField.GetValue(__instance) > 0)
-                hereThicknessField.SetValue(__instance, (int)hereThicknessField.GetValue(__instance) * Math.Max(1, __instance.Api.WorldManager.MapSizeY / DepositStretcherConfig.Current.baseHeight));
+                hereThicknessField.SetValue(__instance, ((int)(int)hereThicknessField.GetValue(__instance) * (int)Math.Round(Math.Max(1, __instance.Api.WorldManager.MapSizeY / (float)DepositStretcherConfig.Current.baseHeight))));
         }
     }
 
