@@ -1,0 +1,12 @@
+{
+    "type": "code",
+    "modid": "depositstretcher",
+    "name": "Deposit Stretcher",
+    "authors": [ "Quaan" ],
+    "description": "Modifies the deposit step of the world generation to scale deposits height with map height",
+    "version": "0.1.0",
+    "dependencies": {
+        "game": "1.17.10",
+        "survival": "1.17.10"
+    }
+}
